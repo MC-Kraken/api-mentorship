@@ -1,0 +1,7 @@
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+/Users/karthikeyankr/Documents/api-mentorship/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
