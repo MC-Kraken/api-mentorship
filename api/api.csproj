@@ -24,4 +24,10 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="apiProjectTest\obj\apiProjectTest.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="apiProjectTest\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="apiProjectTest\obj\project.packagespec.json" />
+    </ItemGroup>
+
 </Project>

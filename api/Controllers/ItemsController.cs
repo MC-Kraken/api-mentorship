@@ -20,6 +20,7 @@ public class ItemsController : ControllerBase
     {
         var itemToPatch = _context.Items.FirstOrDefault(i => i.Id == id);
         request.ApplyTo(itemToPatch!);
+        _context.SaveChanges();
         
         var updatedItem = _context.Items.FirstOrDefault(i => i.Id == id);
 
