@@ -33,4 +33,12 @@ public class ItemsController : ControllerBase
         var items = _context.Items.ToList();
         return Ok(items);
     }
+    
+    [HttpGet]
+    public IActionResult GetById(Guid id)
+    {
+        var item = _context.Items.FirstOrDefault(item => item.Id == id );
+        return Ok(item);
+    }
+    
 }
