@@ -1,6 +1,5 @@
 using api.Controllers;
 using api.Db;
-using apiProjectTest.Extensions;
 using AutoBogus;
 using FluentAssertions;
 using Microsoft.AspNetCore.JsonPatch;
@@ -8,8 +7,10 @@ using Microsoft.AspNetCore.JsonPatch.Operations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
+using TestProject1.Extensions;
+using Xunit;
 
-namespace apiProjectTest;
+namespace TestProject1;
 
 public class ItemsController_should
 {

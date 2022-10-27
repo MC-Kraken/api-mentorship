@@ -1,6 +1,6 @@
 using FluentAssertions.Primitives;
 
-namespace apiProjectTest.Extensions;
+namespace TestProject1.Extensions;
 
 public static class GenericExtensions
 {

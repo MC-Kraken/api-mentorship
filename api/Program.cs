@@ -1,4 +1,6 @@
+using api;
 using api.Db;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddMediatR(typeof(Program).Assembly);
+builder.Services.AddControllers(options =>
+{
+    options.InputFormatters.Insert(0, JsonPatchInputFormatter.GetJsonPatchInputFormatter());
+});
 
 builder.Services.AddSqlite<ItemContext>("Data Source=items.db");
 builder.Services.AddCors(options =>
