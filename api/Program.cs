@@ -1,5 +1,7 @@
 using api;
 using api.Db;
+using api.Queries.Implementations;
+using api.Queries.Interfaces;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,9 @@ builder.Services.AddControllers(options =>
 {
     options.InputFormatters.Insert(0, JsonPatchInputFormatter.GetJsonPatchInputFormatter());
 });
+
+// Register services
+builder.Services.AddTransient<IGetItemsQuery, GetItemsQuery>();
 
 builder.Services.AddSqlite<ItemContext>("Data Source=items.db");
 builder.Services.AddCors(options =>
